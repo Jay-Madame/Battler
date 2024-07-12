@@ -21,6 +21,8 @@ private:
 
 public:
     Attribute();
+    Attribute(std::string name);            // assigns the base and current Scores in the same way as the default constructor.
+    Attribute(std::string name, int value); // assigns name to name, and value to both baseScore and currentScore.
     void setName(std::string n);
     std::string getName();
     void setScore(int score);

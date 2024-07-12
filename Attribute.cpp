@@ -11,6 +11,17 @@ Attribute::Attribute()
         baseScore += bDie.getFaceValue();
     }
 }
+Attribute::Attribute(std::string Name)
+{
+    name = Name;
+    Attribute();
+} // assigns the base and current Scores in the same way as the default constructor.
+Attribute::Attribute(std::string Name, int value)
+{
+    setName(Name);
+    baseScore = value;
+    resetCurrentScore();
+}
 
 void Attribute::setName(std::string n)
 {
